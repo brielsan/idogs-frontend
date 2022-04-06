@@ -1,0 +1,16 @@
+.root {
+  display: flex;
+  min-height: 5vh;
+  min-width: 100vw;
+  background-color: rgba(0, 0, 0, 0.781);
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px -17px 15px 1px rgba(0, 0, 0, 0.199);
+  color: white;
+  user-select: none;
+}
+
+.copyright {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}

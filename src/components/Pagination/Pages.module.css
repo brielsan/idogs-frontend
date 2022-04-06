@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.paginationinputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  gap: 10px;
+  align-items: center;
+  user-select: none;
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+}
+
+.actualPage {
+  background-color: rgb(53, 53, 53);
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.3s;
+}
+
+.pages {
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+  border-radius: 5px;
+  color: rgb(53, 53, 53);
+  cursor: pointer;
+  user-select: none;
+  transition: 0.3s;
+}
+
+.pages:hover,
+.actualPage:hover {
+  transform: scale(107%);
+  transition: 0.3s;
+}
+
+.off {
+  display: none;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn img {
+  width: 3vh;
+}
+
+.btn:hover {
+  transform: scale(120%);
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 600px) {
+  .paginationinputs {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+}

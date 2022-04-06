@@ -1,0 +1,47 @@
+.root {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../../img/2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  height: 50vh;
+  border-radius: 100%;
+  box-shadow: 16px 10px 30px -3px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+  color: white;
+}
+.container {
+  background-color: rgba(0, 0, 0, 0.39);
+  width: fit-content;
+  height: fit-content;
+  padding: 40px;
+  align-self: center;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  border-radius: 9px;
+  box-shadow: 16px 10px 30px -3px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  background-color: #3f3f3f;
+  border-radius: 9px;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 50%;
+  align-self: center;
+  font-size: 15px;
+  cursor: pointer;
+}

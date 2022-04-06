@@ -1,0 +1,28 @@
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: none;
+  scrollbar-color: #777777 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(31, 31, 31);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #777777;
+  border-radius: 10px;
+  border: 0px none #7f6262;
+}
+
+.App {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  font-family: "Secular One", sans-serif;
+}

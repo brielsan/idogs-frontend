@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Verdana", sans-serif;
+}
+
+.root {
+  display: flex;
+  margin: 0.2%;
+  flex: 1 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: 0.2s;
+}
+
+.temperament,
+.weight {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(43, 43, 43);
+  border-radius: 0px 0px 10px 10px;
+  padding-top: 3px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  z-index: 1;
+  transition: 0.2s;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  padding: 5px;
+  background-color: rgb(43, 43, 43);
+  text-shadow: 1px 0px 6px rgba(0, 0, 0, 0.32);
+  font-size: 20px;
+  position: absolute;
+  gap: 10px;
+  align-self: end;
+  border-radius: 10px 10px 0px 0px;
+  cursor: text;
+}
+
+.img {
+  z-index: 0;
+  width: 39vh;
+  height: 29vh;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.img:hover {
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.397);
+  transition: 0.2s;
+}
+
+.root:hover {
+  transform: scale(103%);
+  z-index: 2;
+  animation: scale 0.3s linear 2s alternate;
+  transition: 0.2s;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(100%);
+    z-index: 1;
+  }
+  100% {
+    transform: scale(103%);
+    z-index: 2;
+  }
+}
